@@ -1,0 +1,103 @@
+.LeftMenu {
+  user-select: none;
+  position: relative;
+  flex-direction: row;
+  background-color: white;
+  margin-left: -3px;
+  width: 0;
+  border: 2px solid black;
+  border-radius: 0 0 5px 0;
+  border-left: 0;
+  top: 2.55rem;
+  min-height: 35rem;
+  max-height: 100%;
+  position: absolute;
+
+  &.active {
+    margin-left: 0;
+    transition: width 0.3s ease-in-out;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    width: 15rem;
+    border: 2px solid black;
+    border-radius: 0 0 5px 0;
+    border-left: 0;
+
+
+
+    .LeftMenu-toggler {
+      transform: rotate(225deg);
+      
+      &-container {
+        left: 100%;
+      }
+    }
+  }
+
+
+  &.inactive {
+    
+    transition: width 0.3s ease-in-out;
+    width: 0;
+  }
+
+
+}
+
+
+
+.LeftMenu-item {
+  flex-direction: row;
+  padding: 1rem 0 1rem 2rem;
+  z-index: -2;
+  text-overflow: ellipsis;
+  flex-wrap: nowrap;
+  line-clamp: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  border-left: none;
+  border-right: none;
+  
+  .LeftMenu-link {
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+    flex-wrap: inherit;
+    overflow: hidden;
+    text-overflow: inherit;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.2s;
+      transform-origin: center;
+    }
+  }
+}
+
+.LeftMenu-toggler {
+  align-self: center;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5em;
+  transform-origin: center;
+  border: 5px solid black;
+  border-bottom: none;
+  border-left: none;
+  transform: rotate(45deg);
+  cursor: pointer;
+
+  &-container {
+    background-color: white;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 0 5px 5px 0;
+    border-left: 0px;
+    top: 10rem;
+    left: 100%;
+    width: 100%;
+    justify-content: end;
+    display: flex;
+    width: 2rem;
+    height: 6rem;
+    box-shadow: 0 3px 10px rgba(250, 249, 249, 0.11);
+  }
+}

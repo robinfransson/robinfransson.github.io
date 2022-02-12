@@ -1,0 +1,10 @@
+.Page {
+  flex-direction: column;
+  margin-left: 10rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}

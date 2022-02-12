@@ -1,0 +1,14 @@
+.Header {
+    width: 100%;
+    display: inline-flex;
+    align-self: flex-end;
+    border-bottom: 2px solid black;
+    justify-content: end;
+
+    &_item {
+        border-left: 2px solid black;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        border: 2px solid black;
+    }
+}
