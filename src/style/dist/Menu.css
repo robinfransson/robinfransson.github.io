@@ -1,14 +1,14 @@
 .LeftMenu {
+  background-color: #495371;
   user-select: none;
   position: relative;
   flex-direction: row;
-  background-color: white;
   margin-left: -3px;
   width: 0;
   border: 2px solid black;
   border-radius: 0 0 5px 0;
   border-left: 0;
-  top: 2.55rem;
+  top: 15rem;
   min-height: 35rem;
   max-height: 100%;
   position: absolute;
@@ -19,7 +19,7 @@
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   width: 15rem;
   border: 2px solid black;
-  border-radius: 0 0 5px 0;
+  border-radius: 0 5px 5px 0;
   border-left: 0;
 }
 .LeftMenu.active .LeftMenu-toggler {
@@ -58,6 +58,9 @@
   transition: transform 0.2s;
   transform-origin: center;
 }
+.LeftMenu-item .LeftMenu-link:visited {
+  color: blue;
+}
 
 .LeftMenu-toggler {
   align-self: center;
@@ -65,24 +68,23 @@
   height: 1rem;
   margin-right: 0.5em;
   transform-origin: center;
-  border: 5px solid black;
+  border: 5px solid #a7831a;
   border-bottom: none;
   border-left: none;
   transform: rotate(45deg);
   cursor: pointer;
 }
 .LeftMenu-toggler-container {
-  background-color: white;
+  background-color: #495371;
   position: relative;
   border: 2px solid black;
   border-radius: 0 5px 5px 0;
   border-left: 0px;
-  top: 10rem;
+  top: 12rem;
   left: 100%;
-  width: 100%;
   justify-content: end;
   display: flex;
   width: 2rem;
   height: 6rem;
-  box-shadow: 0 3px 10px rgba(250, 249, 249, 0.11);
+  box-shadow: 0 3px 0 0 rgba(250, 249, 249, 0.11);
 }

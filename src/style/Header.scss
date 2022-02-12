@@ -1,14 +1,47 @@
 .Header {
+    user-select: none;
+    color: #F1E0AC;
+    position: fixed;
+    background-color: #495371;
     width: 100%;
     display: inline-flex;
-    align-self: flex-end;
     border-bottom: 2px solid black;
-    justify-content: end;
+    height: 2rem;
+    transition: height 0.1s ease-in-out;
 
-    &_item {
+    &-item {
+        background-color: #74959A;
+        display: none;
+        margin: 1rem 1rem 1rem auto;
         border-left: 2px solid black;
         padding: 0.5rem 1rem;
         border-radius: 5px;
         border: 2px solid black;
+        height: 2rem;
     }
+
+    &.active {
+        height: 10rem;
+
+
+        .Header-main {
+            margin: auto auto auto 2rem;
+            font-size: 5rem;
+            font-weight: 500;
+        }
+
+        .Header-item {
+            display: block;
+        }
+    }
+    .Header-main {
+        align-content: center;
+        justify-content: center;
+        padding: 0.5rem;
+        border-radius: 5px;
+        background-color: #74959A;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
 }

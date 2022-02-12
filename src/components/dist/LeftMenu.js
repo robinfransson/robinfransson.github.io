@@ -12,9 +12,9 @@ exports.LeftMenu = function () {
         React.createElement("div", { className: "LeftMenu-toggler-container", onClick: toggleActive },
             React.createElement("span", { className: "LeftMenu-toggler" })),
         React.createElement("div", { className: "LeftMenu-item" },
-            React.createElement("div", { className: "LeftMenu-link" }, "En \"l\u00E4nk\"")),
+            React.createElement("a", { className: "LeftMenu-link" }, "En \"l\u00E4nk\"")),
         React.createElement("div", { className: "LeftMenu-item" },
-            React.createElement("div", { className: "LeftMenu-link" }, "En \"l\u00E4nk\"")),
+            React.createElement("a", { className: "LeftMenu-link" }, "En \"l\u00E4nk\"")),
         React.createElement("div", { className: "LeftMenu-item" },
-            React.createElement("div", { className: "LeftMenu-link" }, "En \"l\u00E4nk\""))));
+            React.createElement("a", { className: "LeftMenu-link" }, "En \"l\u00E4nk\""))));
 };

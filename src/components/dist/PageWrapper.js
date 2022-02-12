@@ -1,12 +1,14 @@
 "use strict";
 exports.__esModule = true;
-exports.PageWrapper = void 0;
+exports.Layout = void 0;
 var React = require("react");
 require("../style/dist/Page.css");
-exports.PageWrapper = function (_a) {
-    var test = _a.test, children = _a.children, leftMenu = _a.leftMenu;
-    console.log(leftMenu);
-    return (React.createElement("div", { className: "Main" },
-        leftMenu,
-        children));
+var Header_1 = require("./Header");
+var LeftMenu_1 = require("./LeftMenu");
+var MainContainer_1 = require("./MainContainer");
+exports.Layout = function (props) {
+    return (React.createElement("div", { className: "Page" },
+        React.createElement(Header_1.Header, null),
+        React.createElement(LeftMenu_1.LeftMenu, null),
+        React.createElement(MainContainer_1.MainContainer, null)));
 };

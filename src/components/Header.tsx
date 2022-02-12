@@ -1,11 +1,15 @@
-import react from "react";
+import React from "react";
 import "../style/dist/Header.css";
-export const Header = () => {
+
+interface HeaderProps {
+  bigMenu: boolean;
+}
+
+export const Header = (props: HeaderProps) => {
   return (
-    <div className="Header">
-      <div className="Header_item">Test</div>
-      <div className="Header_item">Test2</div>
-      <div className="Header_item">Test3</div>
+    <div className={["Header", props.bigMenu ? "active" : ""].join(" ")}>
+      <div className="Header-main">test</div>
+      <div className="Header-item">Hej</div>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import "../style/dist/Menu.css";
 export const LeftMenu = () => {
   const [active, setActive] = useState(false);
@@ -14,13 +13,13 @@ export const LeftMenu = () => {
         <span className="LeftMenu-toggler"></span>
       </div>
       <div className="LeftMenu-item">
-        <div className="LeftMenu-link">En "länk"</div>
+        <a className="LeftMenu-link">En "länk"</a>
       </div>
       <div className="LeftMenu-item">
-        <div className="LeftMenu-link">En "länk"</div>
+        <a className="LeftMenu-link">En "länk"</a>
       </div>
       <div className="LeftMenu-item">
-        <div className="LeftMenu-link">En "länk"</div>
+        <a className="LeftMenu-link">En "länk"</a>
       </div>
     </div>
   );

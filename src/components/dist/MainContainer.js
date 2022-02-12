@@ -2,7 +2,8 @@
 exports.__esModule = true;
 exports.MainContainer = void 0;
 var React = require("react");
-var Shared_module_scss_1 = require("../style/Shared.module.scss");
-exports.MainContainer = function () {
-    return React.createElement("div", { className: Shared_module_scss_1["default"].Page });
+var react_router_dom_1 = require("react-router-dom");
+exports.MainContainer = function (props) {
+    return (React.createElement("div", { className: ["Page-content", props.marginTop ? " margin" : ""].join(" ") },
+        React.createElement(react_router_dom_1.Outlet, null)));
 };
