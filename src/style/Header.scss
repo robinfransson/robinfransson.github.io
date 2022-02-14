@@ -1,47 +1,54 @@
 .Header {
-    user-select: none;
-    color: #F1E0AC;
-    position: fixed;
-    background-color: #495371;
-    width: 100%;
-    display: inline-flex;
-    border-bottom: 2px solid black;
+  user-select: none;
+  color: #f1e0ac;
+  position: fixed;
+  background-color: #495371;
+  width: 100%;
+  display: inline-flex;
+  border-bottom: 2px solid black;
+  height: 3rem;
+  transition: height 0.1s ease-in-out;
+
+  &-item {
+    background-color: #74959a;
+    display: none;
+    margin: 1rem 1rem 1rem auto;
+    border-left: 2px solid black;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 2px solid black;
     height: 2rem;
-    transition: height 0.1s ease-in-out;
+  }
 
-    &-item {
-        background-color: #74959A;
-        display: none;
-        margin: 1rem 1rem 1rem auto;
-        border-left: 2px solid black;
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-        border: 2px solid black;
-        height: 2rem;
-    }
+  &.active {
+    height: 10rem;
 
-    &.active {
-        height: 10rem;
-
-
-        .Header-main {
-            margin: auto auto auto 2rem;
-            font-size: 5rem;
-            font-weight: 500;
-        }
-
-        .Header-item {
-            display: block;
-        }
-    }
     .Header-main {
-        align-content: center;
-        justify-content: center;
-        padding: 0.5rem;
-        border-radius: 5px;
-        background-color: #74959A;
-        font-size: 1rem;
-        font-weight: 500;
+      padding: auto 4rem auto 3rem;
+      font-size: 5rem;
+      height: 6rem;
+      line-height: 100%;
+      border: 2px solid black;
     }
 
+    .Header-item {
+      display: block;
+    }
+  }
+  .Header-main {
+    display: inline-flex;
+    vertical-align: middle;
+    align-content: center;
+    height: 2rem;
+    margin: 0 0 0 2rem;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    padding: 0.2rem 1rem 0 1rem;
+    border-radius: 5px;
+    background-color: #74959a;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: font-size 0.1s ease-in-out;
+  }
 }

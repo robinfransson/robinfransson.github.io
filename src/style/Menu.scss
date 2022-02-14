@@ -16,34 +16,21 @@
   &.active {
     margin-left: 0;
     transition: width 0.3s ease-in-out;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     width: 15rem;
     border: 2px solid black;
     border-radius: 0 5px 5px 0;
     border-left: 0;
 
-
-
     .LeftMenu-toggler {
       transform: rotate(225deg);
-      
-      &-container {
-        left: 100%;
-      }
     }
   }
 
-
   &.inactive {
-    
     transition: width 0.3s ease-in-out;
     width: 0;
   }
-
-
 }
-
-
 
 .LeftMenu-item {
   flex-direction: row;
@@ -56,7 +43,8 @@
   overflow: hidden;
   border-left: none;
   border-right: none;
-  
+  font-size: 3rem;
+
   .LeftMenu-link {
     color: blue;
     font-weight: bold;
@@ -100,7 +88,6 @@
     justify-content: end;
     display: flex;
     width: 2rem;
-    height: 6rem;
-    box-shadow: 0 3px 0 0 rgba(250, 249, 249, 0.11);
+    height: 10rem;
   }
 }

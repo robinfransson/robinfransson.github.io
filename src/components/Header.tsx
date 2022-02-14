@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/dist/Header.css";
+import "../style/Header.css";
 
 interface HeaderProps {
   bigMenu: boolean;
@@ -8,8 +8,7 @@ interface HeaderProps {
 export const Header = (props: HeaderProps) => {
   return (
     <div className={["Header", props.bigMenu ? "active" : ""].join(" ")}>
-      <div className="Header-main">test</div>
-      <div className="Header-item">Hej</div>
+      <div className="Header-main">Github pages</div>
     </div>
   );
 };
