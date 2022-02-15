@@ -3,3 +3,9 @@ export interface HomePageData {
   image?: URL;
   preamble?: string;
 }
+
+export interface CardData {
+  header: string;
+  body: string;
+  footer?: string;
+}

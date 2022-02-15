@@ -2,14 +2,14 @@
   height: 100%;
   width: 100%;
   background-color: #f1e0ac;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .Page .Page-content {
   width: 100%;
   padding: 6rem 1rem 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .Page .Page-content.margin {

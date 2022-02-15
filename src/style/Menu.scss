@@ -21,6 +21,8 @@
     border-radius: 0 5px 5px 0;
     border-left: 0;
 
+    box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 0.2);
+
     .LeftMenu-toggler {
       transform: rotate(225deg);
     }
@@ -75,6 +77,7 @@
   border-bottom: none;
   border-left: none;
   transform: rotate(45deg);
+  transition: transform 0.2s ease-in-out;
   cursor: pointer;
 
   &-container {
@@ -89,5 +92,6 @@
     display: flex;
     width: 2rem;
     height: 10rem;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
   }
 }

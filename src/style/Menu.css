@@ -28,6 +28,8 @@
   border: 2px solid black;
   border-radius: 0 5px 5px 0;
   border-left: 0;
+  -webkit-box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 0.2);
 }
 
 .LeftMenu.active .LeftMenu-toggler {
@@ -98,6 +100,10 @@
   border-left: none;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
   cursor: pointer;
 }
 
@@ -117,5 +123,7 @@
   display: flex;
   width: 2rem;
   height: 10rem;
+  -webkit-box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=Menu.css.map */
